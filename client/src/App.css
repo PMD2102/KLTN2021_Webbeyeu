@@ -1,0 +1,57 @@
+/* style scrollbar */
+::-webkit-scrollbar {
+  width: 1.25em;
+  /* position: absolute;
+  top: 0;
+  bottom: 0; */
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 1.25em;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+  width: 1.5em;
+}
+/* end style scrollbar */
+
+.one-line-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.three-line-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.rdw-editor-main {
+  background: white;
+  min-height: 20em;
+}
+
+.comment:hover .report-comment {
+  display: block;
+}
